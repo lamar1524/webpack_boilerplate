@@ -58,8 +58,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      filename: 'index.html',
-      title: 'Search example',
+      template: './src/index.html',
       favicon: './src/assets/favicon.png'
     }),
     new CleanWebpackPlugin(),
