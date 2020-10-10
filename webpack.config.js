@@ -49,9 +49,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
-          options: {
-            
-          },
+          options: {},
         },
       },
     ],
@@ -59,7 +57,7 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/index.html',
-      favicon: './src/assets/favicon.png'
+      favicon: './src/assets/favicon.png',
     }),
     new CleanWebpackPlugin(),
   ],
