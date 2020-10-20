@@ -1,4 +1,4 @@
-import { getMocks, sliceMocks } from './index.js';
+import { getMocks, sliceMocks } from './index.tsx';
 
 // getMocks() test
 test('Checking if results mocks are being generated properly', () => {
