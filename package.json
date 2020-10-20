@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --config jest.config.js",
     "build": "webpack --config webpack.prod.js",
-    "develop": "webpack-dev-server --open --port 3030 --config webpack.dev.js"
+    "develop": "webpack-dev-server --open --port 3030 --config webpack.dev.js",
+    "lint": "eslint . --ext .ts"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,8 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.12.1",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
     "autoprefixer": "^10.0.1",
     "babel-core": "^6.26.3",
     "babel-jest": "^26.5.2",
@@ -26,6 +29,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.3.0",
+    "eslint": "^7.11.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
